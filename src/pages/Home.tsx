@@ -56,7 +56,7 @@ export function Home(){
       <View style={styles.container}>      
         
 
-        <Text style={styles.title}>
+        <Text style={styles.title} testID='welcome'>
             Welcome, Rodrigo 
         </Text>  
 
