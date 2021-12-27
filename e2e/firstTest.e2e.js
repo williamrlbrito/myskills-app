@@ -1,4 +1,4 @@
-describe('Meus primeiros testes', () => {
+describe('Home Screen', () => {
   beforeAll(async () => {
     await device.launchApp();
   });
@@ -16,8 +16,10 @@ describe('Meus primeiros testes', () => {
     const buttonAdd = element(by.id('button-add'));
 
     await inputNew.tap();
-    await inputNew.typeText('React Native');
+    await inputNew.typeText('React JS');
+    await buttonAdd.tap();
 
+    await inputNew.typeText('React Native');
     await buttonAdd.tap();
   });
 });
